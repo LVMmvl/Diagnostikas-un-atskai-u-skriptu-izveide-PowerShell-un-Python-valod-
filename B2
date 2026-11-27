@@ -1,0 +1,5 @@
+$diski = Get-PSDrive -PSProvider FileSystem |
+
+Select-Object Name, Used, Free
+
+$diski | Export-Csv -Path "diskspace.csv" -NoTypeInformation -Encoding utf8
