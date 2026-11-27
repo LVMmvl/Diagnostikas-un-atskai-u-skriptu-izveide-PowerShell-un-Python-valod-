@@ -1,1 +1,11 @@
+skaits = 0
 
+with open("sistema.log", encoding="utf-8") as f:
+
+for rinda in f:
+
+if "error" in rinda.lower():
+
+if len(dalas) > 3 and dalas[3] == "WARNING": skaits += 1
+
+print("WARNING rindas:", skaits)
